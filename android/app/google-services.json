@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "591591460288",
+    "project_id": "axolon-notification-centre",
+    "storage_bucket": "axolon-notification-centre.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591591460288:android:d448a8a972d900b306cc25",
+        "android_client_info": {
+          "package_name": "com.axolon.erpapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591591460288-leehqk6qep0s4c5isk2iodt47umd64b6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-eVv-9PEiZ2YcKfVL_nGZmaUGIQOxZC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591591460288-leehqk6qep0s4c5isk2iodt47umd64b6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "591591460288-cuo30bbricub4jso4v0j7k70ke503c3o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.axolonNotificationCentre"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591591460288:android:f2a036f80add584106cc25",
+        "android_client_info": {
+          "package_name": "com.example.axolon_notification_centre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591591460288-leehqk6qep0s4c5isk2iodt47umd64b6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-eVv-9PEiZ2YcKfVL_nGZmaUGIQOxZC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591591460288-leehqk6qep0s4c5isk2iodt47umd64b6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "591591460288-cuo30bbricub4jso4v0j7k70ke503c3o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.axolonNotificationCentre"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

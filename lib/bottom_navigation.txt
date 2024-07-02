@@ -1,0 +1,240 @@
+import 'package:axolon_erp/utils/constants/asset_paths.dart';
+import 'package:axolon_erp/utils/constants/colors.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
+class BottomNav {
+  static bottomNaviation(BuildContext context) {
+    return SizedBox(
+      height: 70,
+      child: Stack(
+        children: [
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              height: 50,
+              decoration: BoxDecoration(
+                  color: AppColors.mutedBlueColor,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(18),
+                      topRight: Radius.circular(18))),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                buildItem(
+                    icon: AppIcons.bin,
+                    ontap: () {
+                      showDialog(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                                insetPadding: EdgeInsets.all(10),
+                                shape: RoundedRectangleBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(20))),
+                                title: Align(
+                                  alignment: Alignment.topRight,
+                                  child: InkWell(
+                                      onTap: () {
+                                        Navigator.pop(context);
+                                      },
+                                      child: Card(child: Icon(Icons.close))),
+                                ),
+                                content: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [Text("Delete")],
+                                ));
+                          });
+                    }),
+                buildItem(
+                    ontap: () {
+                      showDialog(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                                insetPadding: EdgeInsets.all(10),
+                                shape: RoundedRectangleBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(20))),
+                                title: Align(
+                                  alignment: Alignment.topRight,
+                                  child: InkWell(
+                                      onTap: () {
+                                        Navigator.pop(context);
+                                      },
+                                      child: Card(child: Icon(Icons.close))),
+                                ),
+                                content: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [Text("Attach")],
+                                ));
+                          });
+                    },
+                    icon: AppIcons.attachment),
+                buildItem(
+                    ontap: () {
+                      showDialog(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                                insetPadding: EdgeInsets.all(10),
+                                shape: RoundedRectangleBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(20))),
+                                title: Align(
+                                  alignment: Alignment.topRight,
+                                  child: InkWell(
+                                      onTap: () {
+                                        Navigator.pop(context);
+                                      },
+                                      child: Card(child: Icon(Icons.close))),
+                                ),
+                                content: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [Text("print")],
+                                ));
+                          });
+                    },
+                    icon: AppIcons.printer),
+                Transform.translate(
+                  offset: Offset(0, -12),
+                  child: Container(
+                    alignment: Alignment.topCenter,
+                    height: 58,
+                    padding: EdgeInsets.all(3),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: AppColors.white,
+                    ),
+                    child: FloatingActionButton(
+                        onPressed: () {
+                          showDialog(
+                              context: context,
+                              builder: (context) {
+                                return AlertDialog(
+                                    insetPadding: EdgeInsets.all(10),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(20))),
+                                    title: Align(
+                                      alignment: Alignment.topRight,
+                                      child: InkWell(
+                                          onTap: () {
+                                            Navigator.pop(context);
+                                          },
+                                          child:
+                                              Card(child: Icon(Icons.close))),
+                                    ),
+                                    content: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [Text("add")],
+                                    ));
+                              });
+                        },
+                        child: Icon(Icons.add),
+                        mini: true,
+                        backgroundColor: AppColors.primary),
+                  ),
+                ),
+                buildItem(
+                    ontap: () {
+                      showDialog(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                                insetPadding: EdgeInsets.all(10),
+                                shape: RoundedRectangleBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(20))),
+                                title: Align(
+                                  alignment: Alignment.topRight,
+                                  child: InkWell(
+                                      onTap: () {
+                                        Navigator.pop(context);
+                                      },
+                                      child: Card(child: Icon(Icons.close))),
+                                ),
+                                content: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [Text("preview")],
+                                ));
+                          });
+                    },
+                    icon: AppIcons.preview),
+                buildItem(
+                    ontap: () {
+                      showDialog(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                                insetPadding: EdgeInsets.all(10),
+                                shape: RoundedRectangleBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(20))),
+                                title: Align(
+                                  alignment: Alignment.topRight,
+                                  child: InkWell(
+                                      onTap: () {
+                                        Navigator.pop(context);
+                                      },
+                                      child: Card(child: Icon(Icons.close))),
+                                ),
+                                content: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [Text("document")],
+                                ));
+                          });
+                    },
+                    icon: AppIcons.document),
+                buildItem(
+                    ontap: () {
+                      showDialog(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                                insetPadding: EdgeInsets.all(10),
+                                shape: RoundedRectangleBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(20))),
+                                title: Align(
+                                  alignment: Alignment.topRight,
+                                  child: InkWell(
+                                      onTap: () {
+                                        Navigator.pop(context);
+                                      },
+                                      child: Card(child: Icon(Icons.close))),
+                                ),
+                                content: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [Text("Save")],
+                                ));
+                          });
+                    },
+                    icon: AppIcons.save),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+
+  static Widget buildItem({required Function() ontap, required String icon}) {
+    return InkWell(
+      onTap: ontap,
+      child: SizedBox(
+        height: 22,
+        width: 22,
+        child: SvgPicture.asset(
+          icon,
+          color: AppColors.primary,
+        ),
+      ),
+    );
+  }
+}

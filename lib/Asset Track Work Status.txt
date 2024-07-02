@@ -1,0 +1,46 @@
+{
+  "token": "feb4145bab4a44699b995ea333ce5533",
+  "SysDocType": 3,
+  "SysDocID": "VSI06",
+  "VoucherID": "VQ000102",
+  "Reference": "",
+  "Description": "",
+  "TransactionDate": "2023-08-14T10:21:14.687706",
+  "DueDate": "2023-08-14T10:21:14.687664",
+  "RegisterID": "",
+  "DivisionID": "",
+  "CompanyID": "",
+  "PayeeID": "",
+  "PayeeType": "",
+  "CurrencyID": "",
+  "CurrencyRate": 0,
+  "Amount": 63,
+  "IsPOS": true,
+  "IsCheque": false,
+  "POSShiftID": 0,
+  "POSBatchID": 0,
+  "TransactionDetails": [
+    {
+      "PaymentMethodID": "CASH",
+      "BankID": "",
+      "Description": "",
+      "Amount": 63,
+      "AmountFC": 0,
+      "ChequeDate": "2023-08-14T10:00:46.246515",
+      "ChequeNumber": ""
+    }
+  ],
+  "TransactionAllocationDetails": [
+    {
+      "InvoiceSysDocID": "VSI06",
+      "InvoiceVoucherID": "VQ103877",
+      "PaymentSysDocID": "VSI06",
+      "PaymentVoucherID": "VQ000101",
+      "CustomerID": "V-ALA002",
+      "ARJournalID": 1182430,
+      "PaymentARID": 0,
+      "AllocationDate": "2022-03-31T13:07:23.573",
+      "PaymentAmount": 63
+    }
+  ]
+}
